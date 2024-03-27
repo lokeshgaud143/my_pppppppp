@@ -1,0 +1,272 @@
+*{
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+
+}
+
+a{
+    color:aliceblue;
+}
+.challagne_div{
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 242, 147);
+    position: fixed;width: 100%;
+    margin-top: 60px;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.challagne_div p{
+    color: black;padding-left: 10px;
+    display: inline;   
+    
+}
+#cross{
+    display: none;
+}
+.challagne_div  label{
+    display: inline;
+    float: right;
+    padding-right: 10px;
+}
+
+#cross:checked~.challagne_div {
+    display: none;
+}
+
+header {
+    padding:20px;
+    width: 93vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.559);
+    animation-name: navbar;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+header nav a{
+    margin-left: 5%;
+    padding: 4px 20px;
+}
+header nav a:hover{
+    color: darkgreen;
+}
+header nav a:active{
+    background-color: rgba(0, 255, 255, 0.138);
+    color: aliceblue;
+}
+.manu_btn{
+    display: none;
+    font-size: x-large;
+}
+#check:checked~nav {
+    display: block;
+    /* background-color: aliceblue;
+     */
+     
+}
+
+
+/*  home_sec start  */
+
+.home_sec{
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid darkgreen;
+    padding-bottom: 20px;
+}
+.main_home_div{
+    height: 70vh;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 20px;
+}
+.main_home_div .imgdiv{
+    width: 50%;
+    height: fit-content;
+    /* background-color: rgb(123, 110, 92); */
+}
+.imgdiv img{
+    width: 70%;
+    height: 80%;
+    border-image: fill;
+    animation-name: homimg;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+.main_home_div .pera_div{
+    width: 50%;
+    height: fit-content;
+    padding-top: 110px;
+    padding-right: 20px;
+    /* background-color: rgb(159, 146, 128); */
+}
+
+.about_me{
+    color: rgb(202, 208, 208);
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 2px 3px 5px green;
+    text-decoration: underline;
+}
+.pera_div{
+    height: fit-content;
+    animation-name: sliding;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+.pera_div h2{
+color: rgb(174, 174, 174);
+font-weight: 300;
+text-transform: uppercase;font-size: 3rem;
+}
+.pera_div i{
+    font-size: xx-large;
+    margin-left: 10px;
+    color: aliceblue;
+
+}
+.pera_div i:hover{
+    color: darkgreen;
+}
+.pera_div a{
+    padding: 13px 35px;
+    /* background-color: gray; */
+    border-radius: 16px;
+    transition: 0.3s;
+    border: 1.8px solid green;
+
+}
+.pera_div a:hover{
+    border-radius: 0px;
+    color: aliceblue;
+    background-color: green;
+}
+
+
+
+/* skills stion */
+
+.Services{
+    height: fit-content;     
+    border: 2px solid darkgreen;
+    padding: 20px;
+
+}
+.Services .Projects_h1{
+    color: aliceblue;
+    text-align: left;
+    padding: 7px 20px;
+    display: inline;
+    border-bottom: 2px solid green;
+}
+.in_pro h1{
+    font-size: 13rem;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 20px;   
+}
+.in_pro h1:hover{
+    color: aliceblue;
+    cursor: pointer;
+    transition: 3s;
+}
+.in_pro     p{
+    color: green;
+    text-align: center;
+} 
+
+.malware{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px lavender;
+    border: 1.5px solid green;
+    width: fit-content;
+    padding: 100px 40px;
+    position: fixed;
+    top:55%;
+    left: 0%;
+    translate: (-50% -50%);
+    animation-name: mal;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+.malware p{
+    color:green;
+}
+#mal:checked~.malware{
+    display: none;
+}
+.malware label{
+    margin: 10px;
+    border: 1px solid green;
+    padding: 4px 20px;
+}
+.malware label:hover{
+    background-color: green;
+    color: black;
+}
+
+/* contact pag */
+
+.contact{
+    height: fit-content;
+    /* background-color: rgba(0, 128, 0, 0.33); */
+    box-shadow: inset 2px 20px 1000px rgba(0, 128, 0, 0.283) ;
+}
+.in_contact{
+    width:80%;
+}
+.contact .in_contact form  .form_data {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    border-bottom: 2px solid green;
+}
+.btn_form{
+    background-color: green;
+    color: aliceblue;
+    padding: 10px 20%;
+    cursor: pointer;
+}
+
+
+/* Projects */
+
+.Projects{
+    height:70vh;
+    border: 2px solid darkgreen;
+    padding: 20px;
+    padding-top: -10px;
+    padding: 30px;
+
+}
+.Projects .Projects_h1{
+    color: aliceblue;
+    text-align: left;
+    padding: 7px 20px;
+    display: inline;
+    border-bottom: 2px solid green;
+}
+
+.in_pro h1{
+    font-size: 13rem;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 20px;   
+}
+.in_pro h1:hover{
+    color: aliceblue;
+    cursor: pointer;
+    transition: 3s;
+}
+.in_pro     p{
+    color: green;
+    text-align: center;
+}

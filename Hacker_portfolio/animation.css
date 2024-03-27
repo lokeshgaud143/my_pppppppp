@@ -1,0 +1,38 @@
+@keyframes sliding {
+    from{
+        
+        opacity: 0;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes mal {
+    from{
+        top:100vh;
+        opacity: 5;
+    }
+    to{
+        top: 53vh;
+    }
+}
+
+@keyframes navbar {
+    from{
+        margin-top:-100% ;
+        opacity: 0;
+    }
+    to{
+        margin-bottom: 0%;
+    }
+}
+
+@keyframes homimg {
+    from{
+        opacity: -10;
+    }
+    to{
+        opacity: 10;
+    }
+}

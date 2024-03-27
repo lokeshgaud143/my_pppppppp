@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBI SECURITY CONSALTENCY COMPANY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<style>
+    body {
+        background-color: #000000;
+        color: rgb(183, 183, 183);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+
+    }
+
+    body:disabled {
+        pointer-events: none;
+    }
+
+    .contact_submit {
+        height: 300px;
+        background-color: rgb(0, 0, 0);
+        font-family: monospace;
+        font-weight: 100;
+
+
+    }
+
+    p,
+    h1 {
+
+        color: green;
+    }
+</style>
+
+<body>
+    <div>
+        <center>
+            <input type="checkbox" name="" id="mal" style="display: none;">
+            <div class="malware">
+                <p>This Website Has May Be a Malware Or Trojan ,And Harmful Viruses. </p>
+                <br>
+                <p>Do you really Conutioue with this ? </p>
+                <br><br>
+                <label for="mal">OK</label>
+                <label for="mal">Cencle</label>
+                <br><br><br>
+                <center>
+                    <h3>
+                        Your IP Address is :
+                    </h3>
+                    <p id="gfg"></p>
+
+                </center>
+        </center>
+    </div>
+    <header>
+        <input type="checkbox" name="" id="check" style="display: none;">
+        <label for="check" class="manu_btn"><i class="ri-menu-3-line"></i></label>
+        <nav>
+            <a href="#home_sec">Home</a>
+            <a href="#Services">Service</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+    </header><input type="checkbox" name="" id="cross">
+    <div class="challagne_div">
+        <div class="in">
+
+            <p> 🧐 I Have A Challagne For You : In This Website Have A Virus , If You Found This Virus Just MSG , We Will
+                Pay You ?
+            </p>
+            <label for="cross">❌</label>
+        </div>
+
+    </div>
+    <section class="home_sec" id="home_sec">
+        <br><br><br><br><br><br>
+        <div class="main_home_div">
+            <div class="imgdiv">
+                <img src="https://cdn.pixabay.com/photo/2019/08/29/05/14/hacker-4438137_960_720.png" draggable="false">
+            </div>
+
+            <div class="pera_div">
+                <span class="about_me">About US</span>
+                <br><br><br>
+                <h2>we are here to provide security</h2><br><br>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-github-fill"></i>
+                <i class="ri-whatsapp-fill"></i>
+                <br><br><br>
+                <a href="mailto:lokeshgaud7851@gmail.com">Get in Touch</a>
+                <br><br><br>
+            </div>
+        </div>
+        <br><br>
+    </section>
+    <br>
+
+    <br>
+    <!--  -->
+    <section class="Services" id="Services">
+        <br><br>
+        <h1 class="Projects_h1">Services</h1>
+        <div class="in_pro">
+            <h1>+</h1>
+            <p>we are not providing any Services yet </p>
+        </div>
+        <br><br><br><br>
+    </section>
+    <!--  -->
+    <section class="Projects" id="Projects">
+        <br><br>
+        <h1 class="Projects_h1">Projects</h1>
+        <div class="in_pro">
+            <h1>+</h1>
+            <p>There is not any Project</p>
+            <br><br><br><br>
+        </div>
+        <br><br><br><br>
+
+    </section>
+    <!-- ///////////////////////////Contact -->
+
+    <div class="contact" id="contact">
+        <center>
+            <div class="in_contact"><br>
+                <h1>Contact Form</h1>
+                <br>
+                <form action="#" method="post">
+                    <input required class="form_data" type="text" name="name" placeholder="Name * "><br><br><br>
+                    <input required class="form_data" type="email" name="mail" placeholder="Email-id * "><br><br><br>
+                    <textarea required class="form_data" name="msg" id="" cols="53" rows="4"
+                        placeholder="write here your message *"></textarea><br><br><br>
+                    <input class="btn_form" id="go" type="submit"><br><br>
+                    <input class="btn_form" type="reset" value="Reset">
+                </form>
+            </div><br><br><br>
+        </center>
+    </div>
+    <!-- //////////////////////////////////////////////////////GSAP/////////////////////////-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    /* Add "https://api.ipify.org?format=json" to 
+    get the IP Address of user*/
+    $(document).ready(() => {
+        $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+
+                // Displayin IP address on screen
+                $("#gfg").html(data.ip);
+            })
+    });
+    document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+    });
+
+    document.querySelectorAll('.disabled').forEach(element => {
+        element.style.pointerEvents = 'none';
+    });
+</script>
+
+</html>

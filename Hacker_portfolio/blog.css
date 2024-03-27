@@ -1,0 +1,28 @@
+.insid{
+    background:none;
+    color: rgb(58, 58, 58);
+    height: 100%; 
+    padding-top: 65px;
+    width: 70%;  
+}
+a{
+    color: gray;
+}
+.n1st{
+    height: 40%;
+    padding-left: 20px;
+    background-color: rgb(236, 234, 238);
+    padding: 20px;
+}
+.n1st img{
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+.n1st h1{
+    text-align: left;
+    color: black;
+}
+.n1st p{
+    text-align: left;
+}
